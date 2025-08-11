@@ -5,11 +5,22 @@ body{
 }
 
 header {
-    margin: 10px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: #Ffd500;
 }
+
+#equipe {
+    display: flex;
+}
+#equipe img {
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; /*Para fazer as fotos do pessoal da equipe ficar Circular*/
+    object-fit: cover; /*isso garante que as nossas fotos fiquem redondas sem distorcer e parecer oval*/
+}
+
 
 header nav {
     padding: 20px;
