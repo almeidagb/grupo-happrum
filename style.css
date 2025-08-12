@@ -7,8 +7,8 @@ html{
     scroll-behavior: smooth;
 }
 #fundo {        /*Foto de fundo, depois mudar pra colocar o carrossel*/
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(255, 213, 0, 0.247)), url('ImagensTeste/TesteImagemFundo 2.jpg') top center/cover no-repeat;
-    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgb(0, 0, 0)), url('ImagensTeste/TesteImagemFundo 2.jpg') top center/cover no-repeat;
+    height: 65vh;
     text-align: center;
     padding-top: 30vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +26,7 @@ html{
 header {
     margin: 0;
     display: flex;
-    
+     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 213, 0); 
 }
@@ -44,13 +44,25 @@ header a{
     font-family: Arial, Helvetica, sans-serif;
     
 }
-
+header a:hover{
+    transition: 0.2s;
+    color: #ffffff;
+}
 header ul{
   
     gap: 50px;
     display: flex;
     justify-content: space-between;
 }
+header img {
+    
+    height: auto;
+    width: auto;
+    max-height: 70px; 
+    margin-left: 10px;
+    
+}
+
 #sobre {
     max-width: 600px;        
     margin: 0 auto;          
@@ -61,7 +73,17 @@ header ul{
 }
 
 
+
 #equipe {
+
+    text-align: center;
+}
+#equipe p{
+    max-width: 600px;        
+    margin: 0 auto;          
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    padding: 20px;
     text-align: center;
 }
 #equipe > figure{
@@ -73,7 +95,32 @@ header ul{
     height: 100px; 
     border-radius: 50%; /*Para fazer as fotos do pessoal da equipe ficar Circular*/
     object-fit: cover; /*isso garante que as nossas fotos fiquem redondas sem distorcer e parecer oval*/
+    transition: transform 0.3s ease; 
 }
+#equipe img:hover {
+    transform: scale(1.2); /*aumenta quando passamos o mouse */
+    transition: 0.2s;
+}
+
+
+#projetos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+}
+#projetos figure {
+    display: inline-block;    
+    text-align: center;    
+}
+#projetos img {
+    width: 300px;      
+    height: 200px;     
+    object-fit: cover;  /*deixa todas as imagens que a gente colocar do projeto do memso tamanho, evitando que fique estourada */
+    
+}
+
+
+
+
 
 
 
