@@ -3,16 +3,70 @@ body{
     margin: 0;
     
 }
+html{
+    scroll-behavior: smooth;
+}
+#fundo {        /*Foto de fundo, depois mudar pra colocar o carrossel*/
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(255, 213, 0, 0.247)), url('ImagensTeste/TesteImagemFundo 2.jpg') top center/cover no-repeat;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large; /*Depois quem quiser muda o tamanho aqui da fonte*/
+}
+#fundo h1{
+    color: #ffffff;
+}
+#fundo p{
+    color: #Ffd500;
+}
+
+
 
 header {
     margin: 0;
     display: flex;
+    
     justify-content: space-between;
-    background-color: #Ffd500;
+    background-color: rgb(255, 213, 0); 
+}
+header nav {
+    padding: 20px;
 }
 
-#equipe {
+header li {
     display: flex;
+      color: #Ffd500;
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header ul{
+  
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#sobre {
+    max-width: 600px;        
+    margin: 0 auto;          
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#equipe {
+    text-align: center;
+}
+#equipe > figure{
+    display: inline-block;
+    
 }
 #equipe img {
     width: 100px;
@@ -22,13 +76,6 @@ header {
 }
 
 
-header nav {
-    padding: 20px;
-}
-
-header li {
-    display: flex;
-}
 
 footer{
     background-color: #Ffd500;
