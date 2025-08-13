@@ -77,11 +77,12 @@ header img {
 #equipe {
 
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #equipe p{
     max-width: 600px;        
     margin: 0 auto;          
-    font-family: Arial, Helvetica, sans-serif;
+    
     color: #000;
     padding: 20px;
     text-align: center;
@@ -120,8 +121,47 @@ header img {
 
 
 
+#servicos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#servicos h1{
+    font-size: xx-large;
+
+}
+#servicos figure {
+    display: flex;  
+    gap: 10px;
+    width: 700px;   
+    margin: auto;   
+    margin-bottom: 20px;
+    background-color: #ffee00b2;
+}
+#servicos img {
+    width: 300px;   
+    height: auto;
+    object-fit: cover;
+}
+#servicos figcaption h1 {
+    margin: 0; 
+    font-size: x-large;
+}
 
 
+
+
+
+#principios{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+}
+
+
+
+#contato{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+}
 
 
 footer{
